@@ -55,14 +55,14 @@ const ProductList: React.FC = () => {
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-row items-center gap-4 font-semibold leading-6 text-primary mb-2  text-[0.8rem]">
                         <div className="w-5 h-10 lg:text-lg bg-primary rounded-sm"></div>
-                        <span className='lg:text-lg' >Today&apos;s</span>
+                        <span className='lg:text-lg  text-base ' >Today&apos;s</span>
                     </div>
 
 
 
-                    <div className="flex flex-row  gap-2 lg:gap-10 mt-6 mb-6 items-center ">
+                    <div className="flex flex-row  gap-4 lg:gap-10 mt-6 mb-6 items-center ">
 
-                        <h2 className="font-bold text-sm  lg:text-2xl "  >Flash Sales</h2>
+                        <h2 className="font-bold text-lg   lg:text-2xl "  >Flash Sales</h2>
                         <FlashSalesCountdown />
                     </div>
 
@@ -72,7 +72,7 @@ const ProductList: React.FC = () => {
                                 <div
                                     key={product.id}
                                     // href="javascript:void(0);"
-                                    className="flex-shrink-0 w-60 bg-background transition-all duration-500 rounded-2xl overflow-hidden  cursor-pointer "
+                                    className="flex-shrink-0 w-52 lg:w-60 bg-background transition-all duration-500 rounded-2xl overflow-hidden  cursor-pointer "
                                 >
                                     <div>
                                         <Image
@@ -84,8 +84,8 @@ const ProductList: React.FC = () => {
                                         />
                                     </div>
                                     <div className="p-4">
-                                        <div className="flex items-center justify-between">
-                                            <h6 className="font-semibold text-xl leading-8 text-foreground transition-all duration-500 group-hover:text-indigo-600">
+                                        <div className="flex flex-col  justify-between   ">
+                                            <h6 className="lg:font-semibold lg:text-xl   lg:leading-8 text-foreground transition-all duration-500 group-hover:text-indigo-600">
                                                 {product.name}
                                             </h6>
                                             <h6 className="font-semibold text-xl leading-8 text-primary">
@@ -101,7 +101,7 @@ const ProductList: React.FC = () => {
                         </div>
 
                     </div>
-                    <div className=" w-full items-center flex justify-center  " >
+                    <div className=" w-full items-center flex justify-center mt-8 " >
 
                         <Button>View all products</Button>
 

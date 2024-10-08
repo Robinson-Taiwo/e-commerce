@@ -37,7 +37,7 @@ const AdCarousel: React.FC = () => {
           <CarouselItem key={data.id}>
             <div className=" border-none  outline-none ">
               <Card className="outline-none  border-none shadow-none  "  >
-                <CardContent className="flex items-center border-none outline-none  relative justify-center w-[90vw] lg:w-full p-6 h-52 lg:h-80">
+                <CardContent className="flex items-center border-none outline-none  relative justify-center  lg:w-full p-6 h-52 lg:h-80">
                   <Image
                     src={data.url} // Using data.url from imageData
                     alt={data.title} // Using data.title for alt text

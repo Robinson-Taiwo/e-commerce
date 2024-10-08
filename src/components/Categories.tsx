@@ -41,7 +41,7 @@ const Categories = () => {
 
 
     return (
-        <div className=" flex flex-col w-full  "  >
+        <div className=" flex flex-col w-full px-6 lg:px-0 "  >
 
             <div>
                 <div className="flex flex-row items-center gap-4 font-semibold leading-6 text-primary mb-2  text-[0.8rem]">

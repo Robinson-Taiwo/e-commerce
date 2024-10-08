@@ -15,8 +15,8 @@ type LucideIcon = React.ComponentType<{ size?: number }>;
 
 const HomePage = () => {
     return (
-        <div className="flex w-full h-full items-center justify-center">
-            <div className="max-w-6xl p-8 w-full h-full">
+        <div className="flex w-full  pb-20  h-full items-center justify-center">
+            <div className="max-w-6xl lg:p-8 w-full h-full">
                 <div className="w-full items-center mt-10 flex justify-center relative gap-6 flex-row">
                     <ul className='lg:flex flex-col  hidden    gap-4'>
                         {categories.map((category) => {
@@ -36,7 +36,6 @@ const HomePage = () => {
                 </div>
 
                 <div className='flex flex-col  mt-20 mb-10  '  >
-
 
 
                     <ProductList />
