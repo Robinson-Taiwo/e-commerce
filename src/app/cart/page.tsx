@@ -4,6 +4,8 @@ import Image from "next/image";
 import { Minus, Plus, Heart, X } from "lucide-react"; // or from react-icons
 import CartCategories from '@/components/cartProduct';
 import CartComponent from '@/components/CartComponent';
+import BreadcrumbBar from '@/components/BreadCrumbComponent';
+import Link from 'next/link';
 
 
 
@@ -11,13 +13,14 @@ const page = () => {
     return (
         <div className='items-center w-full pb-10  flex justify-center '  >
 
-            <div className="flex max-w-6xl w-full flex-col gap-20  ">
+            <div className="flex max-w-6xl w-full flex-col   ">
+                <BreadcrumbBar />
 
-                <div className='  flex flex-col lg:flex-row gap-10 pt-10  w-full    '   >
+                <div className='mb-20  flex flex-col lg:flex-row gap-10   w-full '   >
 
 
-                    <div className="lg:w-4/5 px-4 flex flex-col overflow-auto   lg:h-[80vh]  w-full ">
-                        <div className=" sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
+                    <div className="lg:w-4/5 px-4 py-0 flex flex-col overflow-auto   lg:h-[80vh]  w-full ">
+                        <div className=" lg:mt-0 sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
                             <div className="mx-auto w-full flex-none lg:max-w-2xl xl:max-w-4xl">
                                 <div className="space-y-6">
                                     <div className="rounded-lg border border-border bg-background p-4 shadow-sm  md:p-6">
@@ -571,12 +574,12 @@ const page = () => {
                                     </dl>
                                 </div>
 
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/cart/checkout"
                                     className="flex w-full items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-foreground hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800"
                                 >
                                     Proceed to Checkout <ArrowRight className="ml-2 w-5 h-5" />
-                                </a>
+                                </Link>
 
                                 <div className="flex items-center justify-center gap-2">
                                     <span className="text-sm font-normal text-gray-500 ">or</span>
