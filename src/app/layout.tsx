@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/Theme-Provider";
 import Footer from "@/components/Footer";
+import { ModeToggle } from "@/components/Theme";
+
 
 
 const geistSans = localFont({
@@ -39,8 +41,13 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
+          <div className="relative" >
 
-          {children}
+            {children}
+            <div className="absolute  bottom-8 right-8 "  >
+              <ModeToggle />
+            </div>
+          </div>
           <Footer />
 
         </ThemeProvider>
