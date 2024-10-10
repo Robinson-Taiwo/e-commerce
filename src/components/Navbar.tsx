@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import {
+
   // CircleUserRound,
   Heart,
   Menu,
@@ -173,16 +174,14 @@ const Navbar = () => {
 
           <div className="flex flex-row items-center justify-center gap-4  lg:gap-6 ">
             <div
-              className={`lg:flex flex-row hidden   items-center border-border border rounded-md px-1 transition-all duration-300 ${
-                isFocused ? "w-64  " : " border-none w-10"
-              }`}
+              className={`lg:flex flex-row hidden   items-center border-border border rounded-md px-1 transition-all duration-300 ${isFocused ? "w-64  " : " border-none w-10"
+                }`}
             >
               <Input
                 type="search"
                 placeholder="Search"
-                className={`border-none outline-none focus:outline-none hidden focus-visible:ring-0 transition-all duration-300 ${
-                  isFocused ? "w-full flex" : "w-0"
-                }`}
+                className={`border-none outline-none focus:outline-none hidden focus-visible:ring-0 transition-all duration-300 ${isFocused ? "w-full flex" : "w-0"
+                  }`}
                 onFocus={() => setIsFocused(true)}
                 onBlur={() => setIsFocused(false)}
               />
@@ -197,16 +196,16 @@ const Navbar = () => {
 
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <FaUserCircle className="  cursor-pointer w-6  h-6 " />
-                {/* <Button variant="outline">sign in</Button> */}
+                <Button variant="outline" className="p-[0rem]   border-none hover:bg-background outline-none"  ><FaUserCircle className="w-6 focus:ring-0 focus:outline-none focus:border-none  h-6" /></Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
                   <DropdownMenuItem>
-                    Profile
-                    <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                    <Link href="/account" >Profile
+                    </Link>
+                      <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
                     Billing
@@ -264,27 +263,25 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <div  className="border-b border-b-border px-4 lg:border-none lg:hidden py-2 " >
-        <div
-              className={`lg:flex flex-row   items-center border-border border rounded-md px-1 transition-all duration-300 ${
-                isFocused ? " flex flex-row  w-full " : " flex flex-row  w-full "
+        <div className="border-b border-b-border px-4 lg:border-none lg:hidden py-2 " >
+          <div
+            className={`lg:flex flex-row   items-center border-border border rounded-md px-1 transition-all duration-300 ${isFocused ? " flex flex-row  w-full " : " flex flex-row  w-full "
               }`}
-            >
-              <Input
-                type="search"
-                placeholder="Search"
-                className={`border-none outline-none focus:outline-none hidden focus-visible:ring-0 transition-all duration-300 ${
-                  isFocused ? "w-full flex" : "w-full flex"
+          >
+            <Input
+              type="search"
+              placeholder="Search"
+              className={`border-none outline-none focus:outline-none hidden focus-visible:ring-0 transition-all duration-300 ${isFocused ? "w-full flex" : "w-full flex"
                 }`}
-                onFocus={() => setIsFocused(true)}
-                onBlur={() => setIsFocused(false)}
-              />
+              onFocus={() => setIsFocused(true)}
+              onBlur={() => setIsFocused(false)}
+            />
 
-              <Search
-                onClick={() => setIsFocused(true)}
-                className="cursor-pointer  "
-              />
-            </div>
+            <Search
+              onClick={() => setIsFocused(true)}
+              className="cursor-pointer  "
+            />
+          </div>
         </div>
       </div>
     </div>
