@@ -2,14 +2,15 @@ import Image from "next/image";
 import { Star, Heart, ShoppingCart, Plus, Minus } from "lucide-react";
 import CartComponent from "@/components/CartComponent";
 import CartCategories from "@/components/cartProduct";
+import BreadcrumbBar from "@/components/BreadCrumbComponent";
 
 const ProductDetail = () => {
     return (
         <div className="w-full  flex items-center justify-center ">
 
-            <div className="max-w-6xl flex-col gap-20 flex justify-center items-center ">
-
-                <section className="py-8 bg-background md:py-16 antialiased">
+            <div className="max-w-6xl gap-6 flex-col  flex  ">
+                <BreadcrumbBar />
+                <section className="py-8 bg-background md:py-2 antialiased">
                     <div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
                         <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
                             <div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
@@ -121,7 +122,7 @@ const ProductDetail = () => {
 
 
                     {CartCategories.map((category, index) => (
-                        <CartComponent 
+                        <CartComponent
                             key={index}
                             subtitle={category.subtitle}
                             products={category.products}
