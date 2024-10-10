@@ -9,7 +9,7 @@ export const SignupForm = () => {
         <Card className="mx-auto border-none shadow-none max-w-sm">
             <CardHeader className="w-full items-center justiffy-center flex-col" >
                 <CardTitle className="text-2xl font-bold ">Create an account</CardTitle>
-                <CardDescription>
+                <CardDescription className="text-sm  lg:text-base "  >
                     Enter your details below
                 </CardDescription>
             </CardHeader>

@@ -23,7 +23,7 @@ export default function Dashboard() {
                 <p>
                   Don&apos;t have an account?{" "}
                   <button
-                    className="underline text-blue-500"
+                    className="underline text-primary"
                     onClick={() => setIsLogin(false)}
                   >
                     Sign up

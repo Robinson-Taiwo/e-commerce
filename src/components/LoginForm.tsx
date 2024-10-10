@@ -10,7 +10,7 @@ export const LoginForm = () => {
 
             <div className="w-full items-center mb-10 justify-center flex flex-col" >
                 <p className="text-2xl font-bold ">Login to account</p>
-                <p>
+                <p className="text-sm  lg:text-base "  >
                     Enter your details below
                 </p>
             </div>
