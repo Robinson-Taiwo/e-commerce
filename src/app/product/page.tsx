@@ -8,7 +8,7 @@ const ProductDetail = () => {
     return (
         <div className="w-full  flex items-center justify-center ">
 
-            <div className="max-w-6xl gap-6 flex-col  flex  ">
+            <div className="max-w-6xl w-full gap-6 flex-col  flex  ">
                 <BreadcrumbBar />
                 <section className="py-8 bg-background md:py-2 antialiased">
                     <div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
@@ -30,7 +30,7 @@ const ProductDetail = () => {
                                 />
                             </div>
 
-                            <div className="mt-6 sm:mt-8 lg:mt-0">
+                            <div className="mt-6 max-w-full sm:mt-8 lg:mt-0">
                                 <h1 className="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
                                     Apple iMac 24&quot; All-In-One Computer, Apple M1, 8GB RAM, 256GB SSD, Mac OS, Pink
                                 </h1>

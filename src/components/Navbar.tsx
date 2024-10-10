@@ -205,7 +205,7 @@ const Navbar = () => {
                   <DropdownMenuItem>
                     <Link href="/account" >Profile
                     </Link>
-                      <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                    <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
                     Billing
@@ -235,8 +235,8 @@ const Navbar = () => {
                 <DropdownMenuSeparator />
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
-                  Log out
-                  <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+                  <Link href="/authentication" >Log out
+                  </Link>                  <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -248,7 +248,7 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="absolute top-16 left-0 w-full bg-white shadow-lg z-10 flex flex-col items-center py-4">
+            <div className="absolute top-16 left-0 w-full bg-background shadow-lg z-10 flex flex-col items-center py-4">
               <button className="px-6 py-2 hover:text-primary">Features</button>
               <button className="px-6 py-2 hover:text-primary">
                 How it works
