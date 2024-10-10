@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 // import FlashSalesCountdown from './Countdown';
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 interface Product {
   id: number;
@@ -36,7 +37,9 @@ const ProductComponent: React.FC<ProductComponentProps> = ({
                 {/* Dynamically pass title */}
               </div>
 
-              <Button>See all</Button>
+              <Button>
+                <Link href="/products" >See all</Link>
+              </Button>
             </div>
           </div>
 
@@ -70,9 +73,9 @@ const ProductComponent: React.FC<ProductComponentProps> = ({
                   </div>
                   <div className="p-4">
                     <div className="flex flex-col  justify-between   ">
-                      <h6 className="lg:font-semibold lg:text-xl   lg:leading-8 text-foreground transition-all duration-500 group-hover:text-indigo-600">
+                      <Link href="/product" className="lg:font-semibold lg:text-xl   lg:leading-8 text-foreground transition-all duration-500 group-hover:text-indigo-600">
                         {product.name}
-                      </h6>
+                      </Link>
                       <h6 className="font-semibold text-xl leading-8 text-primary">
                         ${product.price}
                       </h6>
