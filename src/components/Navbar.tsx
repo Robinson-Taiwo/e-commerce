@@ -105,7 +105,7 @@ const Navbar = () => {
         <div className=" flex justify-between w-full items-center px-6 lg:py-5 pt-4 lg:border-b">
           <div className="flex    gap-4 items-center justify-center  flex-row ">
             {/* Hamburger Menu for Mobile */}
-            <div className="lg:hidden   ">
+            <div className="lg:hidden flex items-center justify-center  ">
               <button onClick={toggleMobileMenu} className="focus:outline-none">
                 {isMobileMenuOpen ? (
                   <X className="w-6 h-6" />
