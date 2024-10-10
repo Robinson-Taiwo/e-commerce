@@ -6,9 +6,9 @@ import { Label } from "@/components/ui/label"
 
 export const SignupForm = () => {
   return (
-    <Card className="mx-auto border-none max-w-sm">
+    <Card className="mx-auto border-none shadow-none max-w-sm">
       <CardHeader className="w-full items-center justiffy-center flex-col" >
-        <CardTitle className="text-xl">Sign Up</CardTitle>
+        <CardTitle className="text-2xl font-bold ">Sign Up</CardTitle>
         <CardDescription>
           Enter your information to create an account
         </CardDescription>

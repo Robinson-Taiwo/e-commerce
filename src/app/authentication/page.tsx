@@ -9,7 +9,7 @@ export default function Dashboard() {
 
   return (
     <div className="w-full flex items-center justify-center">
-      <div className="w-full px-8 lg:px-0 lg:grid lg:min-h-[600px] max-w-6xl lg:grid-cols-2 xl:min-h-[800px]">
+      <div className="w-full px-8 lg:px-0 min-h-[80vh] lg:grid lg:min-h-[80vh] max-w-6xl lg:grid-cols-2 xl:min-h-[80vh]">
         <div className="flex items-center justify-center py-12">
           <div className="mx-auto grid w-[350px] gap-4">
           
@@ -33,7 +33,7 @@ export default function Dashboard() {
                 <p>
                   Already have an account?{" "}
                   <button
-                    className="underline text-blue-500"
+                    className="underline text-primary"
                     onClick={() => setIsLogin(true)}
                   >
                     Login
