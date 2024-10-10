@@ -9,9 +9,9 @@ export const LoginForm = () => {
         <form className="grid px-6 lg:px-0 gap-4">
 
             <div className="w-full items-center mb-10 justify-center flex flex-col" >
-                <p className="text-2xl font-bold ">Login</p>
+                <p className="text-2xl font-bold ">Login to account</p>
                 <p>
-                    Enter your information to Sign in
+                    Enter your details below
                 </p>
             </div>
 
