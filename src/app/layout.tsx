@@ -41,10 +41,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <div className="relative" >
+          <div className="" >
 
             {children}
-            <div className="absolute  bottom-8 right-8 "  >
+            <div className="sticky  bottom-8 right-8 "  >
               <ModeToggle />
             </div>
           </div>

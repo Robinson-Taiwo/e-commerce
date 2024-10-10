@@ -13,7 +13,7 @@ const Payment = () => {
         <section className="bg-background antialiased md:py-16">
           <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
             <div className="mx-auto max-w-5xl">
-              <div className="mt-6 sm:mt-8 lg:flex lg:items-start lg:gap-12">
+              <div className="mt-6 lg:mt-0 sm:mt-8 lg:flex lg:items-start lg:gap-12">
                 <form className="w-full rounded-lg border border-border bg-background p-4 shadow-sm sm:p-6 lg:max-w-xl lg:p-8">
                   <div className="mb-6 grid grid-cols-2 gap-4">
                     <div className="col-span-2 sm:col-span-1">
