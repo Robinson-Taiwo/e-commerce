@@ -62,7 +62,7 @@ const Modal = ({ isOpen, onClose, onSave }: {
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-            <div className="bg-background  p-6 rounded-lg w-full">
+            <div className="bg-background  p-6 rounded-lg w-96">
                 <h3 className="text-lg font-bold mb-4">Edit Profile</h3>
                 <div className="space-y-4">
                     {/* Full Name */}
